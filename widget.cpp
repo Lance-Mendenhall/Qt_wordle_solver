@@ -11,6 +11,7 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QLabel>
+#include <QPalette>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -18,6 +19,22 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
     model = new QStringListModel();
+
+    //Widget->setStyleSheet("background-color:lightsteelblue");
+    this->setStyleSheet("background-color:lightsteelblue");
+    ui->pButton->setStyleSheet("background-color:aquamarine");
+    ui->kButton->setStyleSheet("background-color:aquamarine");
+    ui->rButton->setStyleSheet("background-color:aquamarine");
+    ui->sButton->setStyleSheet("background-color:aquamarine");
+    ui->startButton->setStyleSheet("background-color:fuchsia");
+    ui->displayRemWordsButton->setStyleSheet("background-color:goldenrod");
+    ui->numWordsRemainingLabel->setStyleSheet("background-color:lightgreen;padding:5px");
+    ui->bestWordLabel->setStyleSheet("background-color:lightgreen;padding:5px");
+    ui->letterLineEdit->setStyleSheet("background-color:ghostwhite");
+    ui->placementSpinBox->setStyleSheet("background-color:ghostwhite");
+    ui->remainingWordsListView->setStyleSheet("background-color:ghostwhite");
+
+
 
 }
 
